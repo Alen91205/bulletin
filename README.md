@@ -1,4 +1,4 @@
-# bulletin
+# 公告
 
 網址:
 	1. C:\Windows\System32\drivers\etc 添加 example.com
@@ -20,6 +20,31 @@ mysql設定檔:
 	公告修改
 	example.com/?c=notice&m=edit
 
-	api調用獲取公告
-	example.com/?c=api&m=getdata
 
+API 介接方法
+	api url : example.com/?c=api&m=getdata
+	Response :
+	{
+		"status":"0",
+		"msg":[
+			{
+				"id":"1",
+				"title":"標題一",
+				"content":"內容一"
+			},
+			{
+				"id":"2",
+				"title":"標題二",
+				"content":"內容二"
+			},
+			{
+				"id":"3",
+				"title":"標題三",
+				"content":"內容三"
+			}
+		]
+	}
+
+
+服務架構
+	apache mysql php 
